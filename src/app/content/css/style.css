@@ -1,4 +1,16 @@
 .content {
     width: 100%;
-    height: calc(100% - 210px);
+    height: calc(100vh - 270px);
+    padding: 0px 10px;
+    box-sizing: border-box;
 }
+
+/* start content responsive */
+/* start content responsive */
+@media(max-width: 1200px) {
+    .content {
+        padding: 10px 0px;
+    }
+}
+/* start content responsive */
+/* start content responsive */
