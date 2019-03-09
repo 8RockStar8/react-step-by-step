@@ -1,14 +1,10 @@
 import React, { PureComponent } from 'react';
 
-import Home from './home/component';
-
-import './css/style.css';
-
 class Content extends PureComponent {
     render() {
-        return(
+        return (
             <div className="content">
-                <Home />
+                Content
             </div>
         );
     }
