@@ -7,6 +7,16 @@ footer {
 .footer-center {
     width: 1200px;
     height: 100%;
+    line-height: 70px;
     margin: 0px auto;
-    background-color: red;
+    text-align: center;
+    color: #fff;
 }
+
+/* start footer responsive */
+@media(max-width: 1210px) {
+    .footer-center {
+        width: 98%;
+    }
+}
+/* end footer responsive */

@@ -7,7 +7,7 @@ class Footer extends PureComponent {
         return (
             <footer>
                 <div className='footer-center'>
-
+                    Footer NavBar :TODO
                 </div>
             </footer>
         );

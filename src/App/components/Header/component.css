@@ -7,6 +7,16 @@ header {
 .header-center {
     width: 1200px;
     height: 100%;
+    line-height: 70px;
     margin: 0px auto;
-    background-color: red;
+    text-align: center;
+    color: #fff;
 }
+
+/* start header responsive */
+@media(max-width: 1210px) {
+    .header-center {
+        width: 98%;
+    }
+}
+/* end header responsive */
