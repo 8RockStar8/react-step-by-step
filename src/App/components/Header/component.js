@@ -1,10 +1,14 @@
 import React, { PureComponent } from 'react';
 
+import './component.css';
+
 class Header extends PureComponent {
     render() {
         return (
             <header>
-                Header
+                <div className='header-center'>
+
+                </div>
             </header>
         );
     }

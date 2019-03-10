@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+
+import './component.css';
 class Content extends PureComponent {
     render() {
         return (

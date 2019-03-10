@@ -1,10 +1,14 @@
 import React, { PureComponent } from 'react';
 
+import './component.css';
+
 class Footer extends PureComponent {
     render() {
         return (
             <footer>
-                footer
+                <div className='footer-center'>
+
+                </div>
             </footer>
         );
     }
