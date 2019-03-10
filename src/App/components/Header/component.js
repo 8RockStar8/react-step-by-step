@@ -4,7 +4,7 @@ class Header extends PureComponent {
     render() {
         return (
             <header>
-                header
+                Header
             </header>
         );
     }
