@@ -1,6 +1,8 @@
 # react-step-by-step
 Repository for learn reactjs
 
+Create web app for get github users info, from public url. Show users info, create users single page, for more info about user.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

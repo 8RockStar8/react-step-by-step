@@ -1,16 +1,15 @@
 import React, { PureComponent, Fragment } from 'react';
 
-// import Decor from './decor/component';
-import Header from './header/component';
-import Content from './content/component';
-import Footer from './footer/component';
+import './component.css';
 
-import './css/style.css';
+import Header from './components/Header';
+import Content from './components/Content';
+import Footer from './components/Footer';
+
 class App extends PureComponent {
     render() {
         return(
             <Fragment>
-                {/* <Decor /> */}
                 <Header />
                 <Content />
                 <Footer />
