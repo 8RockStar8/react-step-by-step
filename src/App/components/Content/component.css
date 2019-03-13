@@ -6,7 +6,7 @@
 }
 
 .content-center {
-    width: 1200px;
+    width: 1300px;
     height: auto;
     margin: 0px auto;
     padding: 10px 0px;
@@ -15,7 +15,7 @@
 }
 
 /* start user items responsive */
-@media(max-width: 1210px) {
+@media(max-width: 1310px) {
     .content-center {
         width: 98%;
     }

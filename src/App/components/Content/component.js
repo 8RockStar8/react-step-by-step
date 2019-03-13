@@ -4,9 +4,9 @@ import Users from './Users';
 
 import './component.css';
 class Content extends PureComponent {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
         return (
