@@ -1,0 +1,26 @@
+.MuiGrid-spacing-xs-16-65 {
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.MuiGrid-item-43 {
+    margin: 10px 10px !important;
+}
+
+.read-more-link {
+    text-decoration: none;
+}
+
+.Users-paper-38 {
+    height: auto;
+}
+
+.read-more-link:active {
+    color: inherit;
+}
+
+@media(max-width: 340px) {
+    .MuiGrid-item-43 {
+        margin: 10px 0px !important;
+    }
+}
