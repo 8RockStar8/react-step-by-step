@@ -1,7 +1,6 @@
-import React, { PureComponent, Fragment } from 'react';
-// import PropTypes from 'prop-types';
-// import { withStyles } from '@material-ui/core/styles';
-// import { Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import React, { PureComponent } from 'react';
+
+import { NavLink } from 'react-router-dom';
 
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -14,7 +13,6 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-
 import CardActionArea from '@material-ui/core/CardActionArea';
 
 import './component.css';
@@ -25,6 +23,7 @@ const styles = theme => ({
     paper: {
         height: 338,
         width: 300,
+        margin: 10
     },
     control: {
         padding: theme.spacing.unit * 2,
@@ -33,7 +32,6 @@ const styles = theme => ({
         maxWidth: 345,
     },
     media: {
-        // ⚠️ object-fit is not supported by IE 11.
         objectFit: 'cover',
     }
 });
@@ -61,34 +59,36 @@ class Users extends PureComponent {
     render() {
         const { items } = this.state;
         const { classes } = this.props;
+        const singleUrl = '/single/:';
         return (
-            <Fragment>
             <Grid container className={classes.root}>
                 <Grid item xs={12}>
-                    <Grid container className={classes.demo} justify="center">
+                    <Grid container className={classes.demo} justify='center'>
                         {
                             items.map(item => (
                                 <Grid key={ item.id } item>
                                     <Paper className={classes.paper}>
                                         <Card className={classes.card}>
-                                            <CardActionArea>
-                                                <CardMedia 
-                                                    component="img"
-                                                    alt="Contemplative Reptile"
-                                                    className={ classes.media }
-                                                    height="220"
-                                                    image={ item.avatar_url }
-                                                    title="Contemplative Reptile"
-                                                />
-                                                <CardContent>
-                                                    <Typography gutterBottom variant="h5" component="h2">
-                                                        { item.login }
-                                                    </Typography>
-                                                </CardContent>
-                                            </CardActionArea>
+                                            <NavLink to={ singleUrl + item.login }>
+                                                <CardActionArea>
+                                                    <CardMedia 
+                                                        component='img'
+                                                        alt='Contemplative Reptile'
+                                                        className={ classes.media }
+                                                        height='220'
+                                                        image={ item.avatar_url }
+                                                        title='Contemplative Reptile'
+                                                    />
+                                                    <CardContent>
+                                                        <Typography gutterBottom variant='h5' component='h2'>
+                                                            { item.login }
+                                                        </Typography>
+                                                    </CardContent>
+                                                </CardActionArea>
+                                            </NavLink>
                                             <CardActions>
                                                 <Button>
-                                                    <a href={ item.html_url } target='_blank' rel='noopener noreferrer' className='read-more-link'>Personal Info</a>
+                                                    <a href={ item.html_url } target='_blank' rel='noopener noreferrer' className='read-more-link'>Github Link</a>
                                                 </Button>
                                             </CardActions>
                                         </Card>
@@ -100,7 +100,6 @@ class Users extends PureComponent {
                     </Grid>
                 </Grid>
             </Grid>
-            </Fragment>
         );
     }
 }

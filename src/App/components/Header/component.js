@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 import AppBar from '@material-ui/core/AppBar';
 
 import './component.css';
@@ -9,7 +11,8 @@ class Header extends PureComponent {
         return (
             <AppBar position='static'>
                 <div className='header-center'>
-                    Header NavBar :TODO
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/users'>Users</NavLink>
                 </div>
             </AppBar>
         );
