@@ -2,12 +2,12 @@ import React, { PureComponent } from 'react';
 
 import './component.css';
 
-import Content from './components/Content';
+import Section from './section';
 
 class App extends PureComponent {
     render() {
         return(
-            <Content />
+            <Section />
         );
     }
 }
