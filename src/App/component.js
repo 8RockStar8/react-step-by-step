@@ -1,15 +1,14 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 import './component.css';
 
-import Content from './components/Content';
+import Sections from './Sections';
 
-class App extends PureComponent {
-    render() {
-        return(
-            <Content />
-        );
-    }
+
+function App(props) {
+    return(
+        <Sections />
+    );
 }
 
 export default App;

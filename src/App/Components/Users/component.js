@@ -59,7 +59,7 @@ class Users extends PureComponent {
     render() {
         const { items } = this.state;
         const { classes } = this.props;
-        const singleUrl = '/single/:';
+        const singleUrl = '/user/:';
         return (
             <Grid container className={classes.root}>
                 <Grid item xs={12}>
