@@ -110,4 +110,3 @@ Users.propTypes = {
 
 export default withStyles(styles)(Users);
 
-// export default Users;
