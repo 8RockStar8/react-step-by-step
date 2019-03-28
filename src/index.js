@@ -31,7 +31,7 @@ store.dispatch({ type: 'FETCH_GET' });
 
 ReactDOM.render(
     <Provider store={ store }>
-        <App /> 
+        <App store={ store } /> 
     </Provider>,
     document.getElementById('root')
 );

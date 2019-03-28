@@ -13,7 +13,7 @@ function Section(props) {
         <BrowserRouter>
             <Fragment>
                 <Header />
-                <Content />
+                <Content store={ props.store } />
                 <Footer />
             </Fragment>
         </BrowserRouter>

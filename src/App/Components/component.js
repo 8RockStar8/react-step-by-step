@@ -8,7 +8,7 @@ import UserNotFound from './UserNotFound';
 
 import './component.css';
 
-function Components(props) {
+function Components() {
     return (
         <Switch>
             <Route path="/users" exact component={ Users } />
