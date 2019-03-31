@@ -2,9 +2,9 @@ import React from 'react';
 
 import Sections from './Sections';
 
-function App(props) {
+function App() {
     return(
-        <Sections store={ props.store } />
+        <Sections />
     )
 }
 

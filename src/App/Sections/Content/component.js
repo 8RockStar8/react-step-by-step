@@ -5,9 +5,13 @@ import { Route, Switch } from 'react-router-dom';
 import Pages from './../../Pages';
 import Components from './../../Components';
 
-function Content(props) {
+// include Actions here only for test
+import Actions from './../../Actions';
+
+function Content() {
     return (
         <div className='content'>
+            <Actions />
             <div className='content-center'>
                 <Switch>
                     <Route path="/" exact component={ Pages } />

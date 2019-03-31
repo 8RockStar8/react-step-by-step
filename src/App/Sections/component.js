@@ -8,12 +8,12 @@ import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 
-function Section(props) {
+function Section() {
     return(
         <BrowserRouter>
             <Fragment>
                 <Header />
-                <Content store={ props.store } />
+                <Content />
                 <Footer />
             </Fragment>
         </BrowserRouter>

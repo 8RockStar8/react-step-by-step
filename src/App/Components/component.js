@@ -8,10 +8,10 @@ import UserNotFound from './UserNotFound';
 
 import './component.css';
 
-function Components() {
+function Components(props) {
     return (
         <Switch>
-            <Route path="/users" exact component={ Users } />
+            <Route path="/users" exact component={ Users } params={ { store: props.store } } />
             <Route path="/user/:login" exact component={ User } />
             <Route component={ UserNotFound } />
         </Switch>
